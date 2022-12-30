@@ -7,6 +7,7 @@ public class Emlak extends Ilan{
         super(ilanID, userID, baslik, aciklama, fiyat);
         this.mkare = mkare;
         this.kredi = kredi;
+        setKategoriID(2);
     }
 
     public int getMkare(){return mkare;}

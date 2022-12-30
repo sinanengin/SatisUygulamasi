@@ -5,9 +5,8 @@ public class Otomobil extends Vasita {
     private String yakit;
     private String cekis;
 
-    public Otomobil(int ilanID, int userID, String baslik, String aciklama, int fiyat,
-                    String marka, String model, String vitesTipi, String renk,
-                    int uretimYili, String kasa, String yakit, String cekis) {
+    public Otomobil(int ilanID, int userID, String baslik, String aciklama, int fiyat, String marka, String model, String vitesTipi, String renk, int uretimYili, String kasa, String yakit, String cekis)
+    {
         super(ilanID, userID, baslik, aciklama, fiyat, marka, model, vitesTipi, renk, uretimYili);
         this.kasa = kasa;
         this.yakit = yakit;

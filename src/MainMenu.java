@@ -1,11 +1,6 @@
-
-
-
 public class MainMenu extends Main implements Menu{
-
     @Override
-    public void menu()  {
-
+    public void menu(){
 
         while(secim != 0)
         {
@@ -18,7 +13,8 @@ public class MainMenu extends Main implements Menu{
             boolean check = true;
             while (check)
             {
-                try {
+                try
+                {
                     secim = scanner.nextInt();
                     check = false;
                 }
@@ -48,14 +44,11 @@ public class MainMenu extends Main implements Menu{
                         }
                         new AccountLogin().Login();
                     }
-
                     break;
                 case 2:
                     System.out.println("********** KAYIT OL **********\n");
                     new AccountRegister().Register();
                     System.out.println("Ana Menüye Yönlendiriliyorsunuz...");
-
-
                     break;
 
                 case 3:

@@ -11,10 +11,11 @@ public class VasitaMenu extends IlanMenu implements Menu
         boolean kontrol = true;
 
         while (secim != 3) {
-            System.out.println("Vasıta İlanı Oluşturmak İçin Kategori Seçiminizi Yapınız: ");
             System.out.println("[1] Otomobil");
             System.out.println("[2] Motosiklet");
             System.out.println("[3] Geri Dön");
+            System.out.print("Vasıta İlanı Oluşturmak İçin Kategori Seçiminizi Yapınız: ");
+
 
             while (kontrol) {
                 try {
@@ -31,7 +32,8 @@ public class VasitaMenu extends IlanMenu implements Menu
                     case 1:
                         new IlanCreate().otomobilCreate();
                         System.out.println("\n\n****** İLANINIZ YAYIMLANDI ****** ");
-                        try {
+                        try
+                        {
                             System.out.println("Devam etmek için ENTER tuşuna basınız...");
                             System.in.read();
                         } catch (IOException e) {

@@ -1,4 +1,3 @@
-
 public class User extends Account{
 
     private String firstName, lastName, phone, email, adress;
@@ -14,5 +13,4 @@ public class User extends Account{
     public void setPhone(String phone){this.phone = phone;}
     public void setEmail(String email){this.email = email;}
     public void setAdress(String adress){this.adress = adress;}
-
 }

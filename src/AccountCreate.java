@@ -5,13 +5,11 @@ public class AccountCreate {
     private String password;
 
     AccountCreate(){};
-
     AccountCreate(String username, String password)
     {
         this.username = username;
         this.password = password;
     }
-
     AccountCreate(String username)
     {
         this.username = username;
@@ -41,7 +39,7 @@ public class AccountCreate {
         }
         return false;
     }
-
+/*
     public int loginId(ArrayList<Account> accounts)
     {
         for(Account account : accounts)
@@ -52,7 +50,7 @@ public class AccountCreate {
             }
         }
         return 0;
-    }
+    }*/
 
     public boolean loginAccountCheck(ArrayList<Account> accounts,int registerId)
     {

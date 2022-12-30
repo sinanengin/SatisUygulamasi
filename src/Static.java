@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Static {
+public class Static
+{
     static Scanner scanner = new Scanner(System.in);
     static ArrayList<Account> accounts = new ArrayList<>();
     static ArrayList<Ilan> ilanlar = new ArrayList<>();
@@ -13,5 +14,4 @@ public class Static {
     static boolean loop = true;
     static boolean UserLogin = false;
     static Menu menu;
-
 }

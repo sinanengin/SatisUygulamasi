@@ -5,8 +5,8 @@ public class Vasita extends Ilan{
     private String vitesTipi;
     private String renk;
     private int uretimYili;
-    public Vasita(int ilanID, int userID, String baslik, String aciklama,
-                  int fiyat, String marka, String model, String vitesTipi, String renk, int uretimYili) {
+    public Vasita(int ilanID, int userID, String baslik, String aciklama, int fiyat, String marka, String model, String vitesTipi, String renk, int uretimYili)
+    {
         super(ilanID, userID, baslik, aciklama, fiyat);
         this.marka = marka;
         this.model = model;

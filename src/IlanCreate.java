@@ -1,24 +1,25 @@
 public class IlanCreate extends Main {
-
-
     public void otomobilCreate() {
-
         boolean check = true;
-        while (check) {
+        while (check)
+        {
             String baslik, aciklama, marka, model, vitesTipi, renk, kasa, yakit, cekis;
             int fiyat, uretimYili;
 
             System.out.println("Otomobil İlanı Oluşturmaktasınız.\n\n");
-            while (true) {
+            while (true)
+            {
                 System.out.println("İlan Başlığı: ");
                 baslik = scanner.next();
-                if (new IlanQuery(baslik).createQuery()) {
+                if (new IlanQuery(baslik).createQuery())
+                {
                     continue;
-                } else {
+                }
+                else
+                {
                     break;
                 }
             }
-
 
             System.out.print("İlan Açıklaması: ");
             aciklama = scanner.next();
@@ -43,29 +44,31 @@ public class IlanCreate extends Main {
             ilanlar.get(loginId).otomobiller.add(new Otomobil(ilanKayitId, loginId, baslik, aciklama, fiyat, marka, model, vitesTipi, renk, uretimYili, kasa, yakit, cekis));
             check = false;
             ilanKayitId++;
-
         }
     }
-
 
     public void MotosikletCreate() {
         boolean check = true;
 
-
         String baslik, aciklama, marka, model, vitesTipi, renk, motorTip;
         int fiyat, uretimYili, motorHacim;
-        while (check) {
+
+        while (check)
+        {
             System.out.println("Motosiklet İlanı Oluşturmaktasınız.\n\n");
-            while (true) {
+            while (true)
+            {
                 System.out.println("İlan Başlığı: ");
                 baslik = scanner.next();
-                if (new IlanQuery(baslik).createQuery()) {
+                if (new IlanQuery(baslik).createQuery())
+                {
                     continue;
-                } else {
+                }
+                else
+                {
                     break;
                 }
             }
-
 
             System.out.print("İlan Açıklaması: ");
             aciklama = scanner.next();
@@ -88,7 +91,6 @@ public class IlanCreate extends Main {
             ilanlar.get(loginId).motosikletler.add(new Motosiklet(ilanKayitId, loginId, baslik, aciklama, fiyat, marka, model, vitesTipi, renk, uretimYili, motorHacim, motorTip));
             ilanKayitId++;
             check = false;
-
         }
     }
 
@@ -97,15 +99,21 @@ public class IlanCreate extends Main {
         String baslik, aciklama, odaSayisi, isitma, adres;
         int fiyat, mkare, binaYas, katSayisi, aidat;
         boolean kredi;
+
         boolean check = true;
-        while (check) {
+        while (check)
+        {
             System.out.println("Daire İlanı Oluşturmaktasınız.\n\n");
-            while (true) {
+            while (true)
+            {
                 System.out.println("İlan Başlığı: ");
                 baslik = scanner.next();
-                if (new IlanQuery(baslik).createQuery()) {
+                if (new IlanQuery(baslik).createQuery())
+                {
                     continue;
-                } else {
+                }
+                else
+                {
                     break;
                 }
             }
@@ -133,11 +141,11 @@ public class IlanCreate extends Main {
             ilanlar.get(loginId).daireler.add(new Daire(ilanKayitId, loginId, baslik, aciklama, fiyat, mkare, kredi, odaSayisi, isitma, adres, binaYas, katSayisi, aidat));
             ilanKayitId++;
             check = false;
-
         }
     }
 
     public void arsaCreate() {
+
         String baslik, aciklama, imarDurum;
         int fiyat, mkare, mkareFiyat;
         boolean kredi;
@@ -145,12 +153,15 @@ public class IlanCreate extends Main {
         while (check) {
 
             System.out.println("Daire İlanı Oluşturmaktasınız.\n\n");
-            while (true) {
+            while (true)
+            {
                 System.out.println("İlan Başlığı: ");
                 baslik = scanner.next();
-                if (new IlanQuery(baslik).createQuery()) {
+                if (new IlanQuery(baslik).createQuery())
+                {
                     continue;
-                } else {
+                } else
+                {
                     break;
                 }
             }
