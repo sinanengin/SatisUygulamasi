@@ -17,8 +17,6 @@ public class AccountLogin extends Main{
             if (new AccountCreate(username,password).loginCheck(accounts))
             {
                 check = false;
-                loginId = new AccountCreate(username,password).loginId(accounts);
-
                 System.out.println("Giriş Başarılı. Hoşgeldiniz!");
                 UserLogin=true;
                 secim = 0;
@@ -26,23 +24,28 @@ public class AccountLogin extends Main{
             else
             {
                 System.out.println("Hatalı giriş yaptınız..!\n");
-                System.out.println("Giriş İşlemine Devam Etmek İstiyor Musunuz? (evet / hayır)");
-                ask = scanner.next();
+                while (true) {
+                    System.out.println("Giriş İşlemine Devam Etmek İstiyor Musunuz? (evet / hayır)");
+                    ask = scanner.next();
 
-                if (ask.toLowerCase().equals("hayır"))
-                {
-                    System.out.println("Giriş İşlemi Sonlandırılıyor...");
-                    try {
-                        Thread.sleep(1000);
-                    }
-                    catch (InterruptedException e)
+                    if (ask.toLowerCase().equals("hayır"))
                     {
-                        System.out.println(e.toString());
+                        System.out.println("Giriş İşlemi Sonlandırılıyor...");
+                        try {
+                            Thread.sleep(1000);
+                        }
+                        catch (InterruptedException e)
+                        {
+                            System.out.println(e.toString());
+                        }
+                        check = false;
+                        break;
+                    } else if (ask.toLowerCase().equals("evet")) {
+                        break;
+                    } else {
+                        System.out.println("Hatalı işlem girdiniz lütfen tekrar deneyiniz...");
                     }
-                    check = false;
                 }
-
-
             }
         }
 

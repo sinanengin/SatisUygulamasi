@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public class IlanListMenu extends MainMenu implements Menu{
 
     @Override
@@ -19,10 +21,23 @@ public class IlanListMenu extends MainMenu implements Menu{
                 switch (secim)
                 {
                     case 1:
-                            new IlanList().List();
+                        new IlanList().ListOtomobil();
+                        try {
+                            System.out.println("Devam etmek için ENTER tuşuna basınız...");
+                            System.in.read();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                         break;
                     case 2:
                         new IlanList().ListMotosiklet();
+                        System.out.println("\n\n****** İLANINIZ YAYIMLANDI ****** ");
+                        try {
+                            System.out.println("Devam etmek için ENTER tuşuna basınız...");
+                            System.in.read();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                         break;
                 }
                 break;

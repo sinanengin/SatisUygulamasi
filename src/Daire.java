@@ -1,14 +1,18 @@
-public class Daire extends Emlak{
+public class Daire extends Emlak {
 
     String odaSayisi, isitma, adres;
-    int binaYas,katSayisi,aidat;
+    int binaYas, katSayisi, aidat;
 
-    public void setOdaSayisi(String odaSayisi){ this.odaSayisi = odaSayisi; }
-    public void setIsitma(String isitma){ this.isitma = isitma; }
-    public void setAdres(String adres){ this.adres = adres; }
+    public Daire(int ilanID, int userID, String baslik, String aciklama, int fiyat, int mkare, boolean kredi,
+                 String odaSayisi, String isitma, String adres, int binaYas, int katSayisi, int aidat) {
+        super(ilanID, userID, baslik, aciklama, fiyat, mkare, kredi);
+        this.odaSayisi = odaSayisi;
+        this.isitma = isitma;
+        this.adres = adres;
+        this.binaYas = binaYas;
+        this.katSayisi = katSayisi;
+        this.aidat = aidat;
+    }
 
-    public void setBinaYas(int binaYas){ this.binaYas = binaYas; }
-    public void setKatSayisi(int katSayisi){ this.katSayisi = katSayisi; }
-    public void setAidat(int aidat){ this.aidat = aidat; }
 
 }

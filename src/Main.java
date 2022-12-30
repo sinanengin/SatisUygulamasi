@@ -15,7 +15,5 @@ public class Main extends Static {
                 loop = true;
             }
         }
-
-
     }
 }

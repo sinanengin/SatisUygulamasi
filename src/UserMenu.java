@@ -1,12 +1,9 @@
-public class UserMenu extends Main implements Menu
-{
+public class UserMenu extends Main implements Menu {
 
     @Override
-    public void menu()
-    {
+    public void menu() {
         secim = -1;
-        while(secim != 0)
-        {
+        while (secim != 0) {
             System.out.println("\nİyi Günler");
             System.out.println(users.get(loginId).getFirstName() + " " + users.get(loginId).getLastName().toUpperCase());
 
@@ -19,8 +16,7 @@ public class UserMenu extends Main implements Menu
             System.out.println("[7] Hesaptan Çıkış Yap");
             System.out.print("\nSeçiminizi yapınız: ");
             boolean check = true;
-            while (check)
-            {
+            while (check) {
                 try {
                     secim = scanner.nextInt();
                     check = false;
@@ -32,11 +28,16 @@ public class UserMenu extends Main implements Menu
                 }
             }
 
-            switch (secim){
+            switch (secim) {
 
                 case 1:
                     System.out.println("***************************************");
                     new IlanListMenu().menu();
+                    try {
+                        System.out.println("Devam etmek için ENTER tuşuna basınız");
+                        System.in.read();
+                    } catch (Exception e) {
+                    }
                     System.out.println("\n\n***************************************");
                     break;
                 case 2:
@@ -55,11 +56,10 @@ public class UserMenu extends Main implements Menu
                     new UserUpdateMenu().menu();
                     break;
                 case 7:
-                    secim=0;
+                    secim = 0;
                     break;
 
             }
-
 
 
         }

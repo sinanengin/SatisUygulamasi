@@ -3,12 +3,12 @@ public class Emlak extends Ilan{
     int mkare;
     boolean kredi;
 
-    public void setMkare(int mkare) { this.mkare = mkare; }
-    public void setKredi(boolean kredi) { this.kredi = kredi; }
+    public Emlak(int ilanID, int userID, String baslik, String aciklama, int fiyat, int mkare, boolean kredi) {
+        super(ilanID, userID, baslik, aciklama, fiyat);
+        this.mkare = mkare;
+        this.kredi = kredi;
+    }
 
     public int getMkare(){return mkare;}
     public boolean getKredi(){ return kredi; }
-
-
-    public Emlak(){ setKategoriID(2); }
 }

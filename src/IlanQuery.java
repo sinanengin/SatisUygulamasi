@@ -15,20 +15,12 @@ public class IlanQuery {
         this.aciklama = aciklama;
     }
 
-    public boolean createQuery(ArrayList<Ilan> ilanlar)
+    public boolean createQuery()
     {
-        for (Ilan ilan : ilanlar)
-        {
-            if (ilan.getBaslik().length() < 8)
-            {
-                System.out.println("İlan Başlığı 8 Karakterden Az Olamaz!");
-                return true;
-            }
+        if(baslik.length()<8) {
+            System.out.println("ilan baslığı 0dan küçük olamaz...");
+            return true;
         }
         return false;
     }
-
-
-
-
 }

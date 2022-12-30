@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.lang.invoke.MethodHandleInfo;
 import java.util.ArrayList;
 
@@ -30,11 +31,23 @@ public class VasitaMenu extends IlanMenu implements Menu
                     case 1:
                         new IlanCreate().otomobilCreate();
                         System.out.println("\n\n****** İLANINIZ YAYIMLANDI ****** ");
+                        try {
+                            System.out.println("Devam etmek için ENTER tuşuna basınız...");
+                            System.in.read();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                         secim = 3;
                         break;
                     case 2:
                         new IlanCreate().MotosikletCreate();
                         System.out.println("\n\n****** İLANINIZ YAYIMLANDI ****** ");
+                        try {
+                            System.out.println("Devam etmek için ENTER tuşuna basınız...");
+                            System.in.read();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                         secim=3;
                         break;
                     default:

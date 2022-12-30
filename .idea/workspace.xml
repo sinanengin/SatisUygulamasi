@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1b30488-fba8-4565-8a12-fc333530231a" name="Changes" comment="otomobilSay vs eklendi hatalar var düzeltilecek">
+    <list default="true" id="b1b30488-fba8-4565-8a12-fc333530231a" name="Changes" comment="birkaç sorun düzeltildi fakat ilancreate kısmında bir problem var ilanlar listelenirken hatalı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AccountRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Arsa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arsa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Daire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Daire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Emlak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Emlak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmlakMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmlakMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ilan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ilan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IlanCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlanCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IlanDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlanDelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IlanList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlanList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IlanListMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlanListMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IlanQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IlanQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Motosiklet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motosiklet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Otomobil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Otomobil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Static.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Static.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserUpdateMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserUpdateMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vasita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vasita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VasitaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VasitaMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +42,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,15 +53,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/sinan/IdeaProjects/SatisUygulamasi",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sinan/IdeaProjects/SatisUygulamasi&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainMenu" />
@@ -136,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671728832849</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="birkaç sorun düzeltildi fakat ilancreate kısmında bir problem var ilanlar listelenirken hatalı">
+      <created>1672245367361</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672245367361</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,7 +187,8 @@
     <MESSAGE value="İlan Gösterme Kısmı Otomobil için hallledildi. &#10;Kod Tekrarları var en son düzeltilecek." />
     <MESSAGE value="İlan Gösterme Fonksiyonu Tüm Kategorilere Eklendi. İlan Ekleme Kısmı Tüm kategorilere eklendi.&#10;Eksik Olan Classlar oluşturuldu." />
     <MESSAGE value="otomobilSay vs eklendi hatalar var düzeltilecek" />
-    <option name="LAST_COMMIT_MESSAGE" value="otomobilSay vs eklendi hatalar var düzeltilecek" />
+    <MESSAGE value="birkaç sorun düzeltildi fakat ilancreate kısmında bir problem var ilanlar listelenirken hatalı" />
+    <option name="LAST_COMMIT_MESSAGE" value="birkaç sorun düzeltildi fakat ilancreate kısmında bir problem var ilanlar listelenirken hatalı" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

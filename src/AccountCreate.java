@@ -31,12 +31,12 @@ public class AccountCreate {
 
     public boolean loginCheck(ArrayList<Account> accounts)
     {
-        int id;
         for (Account account: accounts)
         {
             if(account.getUsername().equals(username) && account.getPassword().equals(password))
             {
-               return true;
+                Static.loginId=account.getId();
+                return true;
             }
         }
         return false;
