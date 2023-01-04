@@ -1,13 +1,12 @@
 public class AccountRegister extends Main{
     boolean check = true;
-
     public void Register()  {
         while(check)
         {
             String username, password, firstName, lastName, phone, email, adress;
-            System.out.println("Kullanıcı Adı: ");
+            System.out.print("Kullanıcı Adı: ");
             username = scanner.next();
-            System.out.println("Şifre: ");
+            System.out.print("Şifre: ");
             password = scanner.next();
 
             if(new AccountCreate(username).registerCheck(accounts))
@@ -19,8 +18,6 @@ public class AccountRegister extends Main{
                     if (devam.equalsIgnoreCase("evet"))
                     {
                         System.out.println("***Lütfen Kullanıcı Adınızı Tekrar Oluşturunuz...***");
-
-
                     }
                     else if (devam.equalsIgnoreCase("hayır"))
                     {
@@ -33,11 +30,9 @@ public class AccountRegister extends Main{
                         System.out.println("Hatalı işlem girdiniz lütfen tekrar deneyiniz...");
                     }
                 }
-
             }
             else
             {
-
                 accounts.add(new Account());
                 accounts.get(registerId).SetUsername(username);
                 accounts.get(registerId).SetPassword(password);
@@ -67,7 +62,6 @@ public class AccountRegister extends Main{
                 ilanlar.add(new Ilan());
 
             }
-
         }
     }
 }

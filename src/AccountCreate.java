@@ -39,25 +39,21 @@ public class AccountCreate {
         }
         return false;
     }
-/*
-    public int loginId(ArrayList<Account> accounts)
-    {
-        for(Account account : accounts)
-        {
-            if(account.getUsername().equals(username)&&account.getPassword().equals(password))
-            {
-                return account.getId();
-            }
-        }
-        return 0;
-    }*/
 
     public boolean loginAccountCheck(ArrayList<Account> accounts,int registerId)
     {
         if (registerId==0)
         {
-            System.out.println("** Şu Anda Mevcut Herhangi Bir Kayıt Yok. **\n");
-            System.out.println("*** Lütfen Öncelikle Kayıt Olunuz. ***\n");
+
+            System.out.println("\nŞu Anda Mevcut Herhangi Bir Kayıt Yok. Lütfen Öncelikle Kayıt Olunuz...");
+            try
+            {
+                System.out.println("Devam Etmek için ENTER Tuşuna Basabilirsiniz..");
+                System.in.read();
+            }
+            catch (Exception e) {
+                System.out.println("Bir Hata Oluştu...");
+            }
             return true;
         }
         else {

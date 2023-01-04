@@ -16,36 +16,35 @@ public class IlanListMenu extends MainMenu implements Menu{
             case 1:
                 System.out.println("[1] Otomobil");
                 System.out.println("[2] Motosiklet");
-                System.out.println("Listelemek İstediğiniz İlan Türünü Seçiniz: ");
+                System.out.print("Listelemek İstediğiniz İlan Türünü Seçiniz: ");
                 secim = scanner.nextInt();
                 switch (secim)
                 {
                     case 1:
                         new IlanList().ListOtomobil();
-                        try {
-                            System.out.println("Devam etmek için ENTER tuşuna basınız...");
-                            System.in.read();
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
-                        }
+                        System.out.println("\n\n****** İLANINIZ YAYIMLANDI ****** ");
                         break;
                     case 2:
                         new IlanList().ListMotosiklet();
                         System.out.println("\n\n****** İLANINIZ YAYIMLANDI ****** ");
-                        try {
-                            System.out.println("Devam etmek için ENTER tuşuna basınız...");
-                            System.in.read();
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
-                        }
                         break;
                 }
                 break;
             case 2:
                 System.out.println("[1] Daire");
                 System.out.println("[2] Arsa");
-                System.out.println("Listelemek stediğiniz İlan Türünü Seçiniz: ");
+                System.out.print("Listelemek stediğiniz İlan Türünü Seçiniz: ");
                 secim = scanner.nextInt();
+
+                switch(secim)
+                {
+                    case 1:
+                        new IlanList().ListDaire();
+                        break;
+                    case 2:
+                        new IlanList().ListArsa();
+                        break;
+                }
                 break;
 
         }

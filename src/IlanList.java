@@ -17,6 +17,7 @@ public class IlanList extends Static {
                     System.out.println("İlan Başlık: " + otomobil.getBaslik());
                     System.out.println("İlan Açıklaması: " + otomobil.getAciklama());
                     System.out.println("İlan Fiyat: " + otomobil.getFiyat());
+
                 }
             }
 
@@ -59,6 +60,7 @@ public class IlanList extends Static {
                 System.out.println("İlan Başlık: " + otomobil.baslik);
                 System.out.println("İlan Açıklaması: " + otomobil.aciklama);
                 System.out.println("İlan Fiyat: " + otomobil.fiyat);
+                System.out.println("Kullanıcı Telefon: " + users.get((otomobil.getUserID())).getPhone());
             }
         }
 
@@ -72,6 +74,7 @@ public class IlanList extends Static {
                 System.out.println("İlan Başlık: " + motosiklet.getBaslik());
                 System.out.println("İlan Açıklaması: " + motosiklet.getAciklama());
                 System.out.println("İlan Fiyat: " + motosiklet.getFiyat());
+                System.out.println("Kullanıcı Telefon: " + users.get((motosiklet.getUserID())).getPhone());
             }
         }
 
@@ -85,6 +88,7 @@ public class IlanList extends Static {
                 System.out.println("İlan Başlık: " + daire.getBaslik());
                 System.out.println("İlan Açıklaması: " + daire.getAciklama());
                 System.out.println("İlan Fiyat: " + daire.getFiyat());
+                System.out.println("Kullanıcı Telefon: " + users.get((daire.getUserID())).getPhone());
             }
         }
 
@@ -98,6 +102,7 @@ public class IlanList extends Static {
                 System.out.println("İlan Başlık: " + arsa.getBaslik());
                 System.out.println("İlan Açıklaması: " + arsa.getAciklama());
                 System.out.println("İlan Fiyat: " + arsa.getFiyat());
+                System.out.println("Kullanıcı Telefon: " + users.get((arsa.getUserID())).getPhone());
             }
         }
 

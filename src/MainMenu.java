@@ -4,11 +4,11 @@ public class MainMenu extends Main implements Menu{
 
         while(secim != 0)
         {
-            System.out.println("************ SATIŞ UYGULAMASINA HOŞGELDİNİZ ************ ");
+            System.out.println("\n************ SATIŞ UYGULAMASINA HOŞGELDİNİZ ************ ");
             System.out.println("[1] Giriş Yap");
             System.out.println("[2] Kayıt Ol");
             System.out.println("[3] Çıkış Yap");
-            System.out.print("\nLütfen seçiminizi yapınız: ");
+            System.out.print("Lütfen seçiminizi yapınız: ");
 
             boolean check = true;
             while (check)
@@ -37,7 +37,7 @@ public class MainMenu extends Main implements Menu{
                         System.out.println("Giriş için yönlendiriliyorsunuz..");
                         try
                         {
-                            Thread.sleep(1000);
+                            Thread.sleep(500);
                         }
                         catch (InterruptedException e){
                             throw new RuntimeException(e);
@@ -54,7 +54,8 @@ public class MainMenu extends Main implements Menu{
                 case 3:
                     System.out.println("Uygulamamızı kullandığınız için teşekkürler..");
                     System.out.println("Çıkış Yapılıyor....");
-                    secim = 0;
+                    System.exit(0);
+
                     break;
                 default:
                     System.out.println("Yanlış Seçim Yaptınız Lütfen Tekrar Deneyiniz..");

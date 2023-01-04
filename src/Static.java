@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Static
+public abstract class Static
 {
     static Scanner scanner = new Scanner(System.in);
     static ArrayList<Account> accounts = new ArrayList<>();

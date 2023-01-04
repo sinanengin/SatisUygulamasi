@@ -8,8 +8,6 @@ public class Arsa extends Emlak {
         this.imarDurum = imarDurum;
     }
 
-
-
     public double getmKareFiyat() {
         return mKareFiyat;
     }

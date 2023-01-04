@@ -2,10 +2,8 @@ import java.util.ArrayList;
 
 public class Ilan
 {
-
     private int ilanID;
     private int kategoriID;
-
     private int userID;
     public String baslik;
     public String aciklama;
@@ -16,18 +14,15 @@ public class Ilan
     ArrayList<Daire> daireler = new ArrayList<>();
     ArrayList<Arsa> arsalar = new ArrayList<>();
 
-    public Ilan() {
-
-    }
-
-    public Ilan(int ilanID, int userID, String baslik, String aciklama, int fiyat) {
+    public Ilan() {}
+    public Ilan(int ilanID, int userID, String baslik, String aciklama, int fiyat)
+    {
         this.ilanID = ilanID;
         this.userID = userID;
         this.baslik = baslik;
         this.aciklama = aciklama;
         this.fiyat = fiyat;
     }
-
     public int getIlanID(){ return ilanID; }
     public int getKategoriID() {return kategoriID; }
     public int getUserID() { return userID; }
@@ -41,7 +36,5 @@ public class Ilan
     public void setBaslik(String baslik) {this.baslik = baslik;}
     public void setAciklama(String aciklama) {this.aciklama=aciklama;}
     public void setFiyat(int fiyat){ this.fiyat = fiyat; }
-
-
 
 }

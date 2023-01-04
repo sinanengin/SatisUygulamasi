@@ -170,11 +170,11 @@ public class IlanCreate extends Main {
             aciklama = scanner.next();
             System.out.println("Arsanızın İmar Durumunu Giriniz: ");
             imarDurum = scanner.next();
-            System.out.println("Dairenizin Metrekaresini Giriniz: ");
+            System.out.println("Arsanızın Metrekaresini Giriniz: ");
             mkare = scanner.nextInt();
-            System.out.println("Dairenizin Krediye Uygunluk Durumu: ");
+            System.out.println("Arsanızın Krediye Uygunluk Durumu: ");
             kredi = scanner.nextBoolean();
-            System.out.println("Dairenizin Fiyatı: ");
+            System.out.println("Arsanızın Fiyatı: ");
             fiyat = scanner.nextInt();
             mkareFiyat = fiyat / mkare;
             ilanlar.get(loginId).arsalar.add(new Arsa(ilanKayitId, loginId, baslik, aciklama, fiyat, mkare, kredi, mkareFiyat, imarDurum));
