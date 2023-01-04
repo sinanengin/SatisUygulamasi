@@ -1,6 +1,7 @@
 public class MainMenu extends Main implements Menu{
     @Override
     public void menu(){
+        secim = -1;
 
         while(secim != 0)
         {

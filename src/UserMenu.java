@@ -32,7 +32,6 @@ public class UserMenu extends Main implements Menu {
             }
 
             switch (secim) {
-
                 case 1:
                     System.out.println("***************************************");
                     new IlanListMenu().menu();
@@ -63,7 +62,9 @@ public class UserMenu extends Main implements Menu {
                     new UserUpdateMenu().menu();
                     break;
                 case 7:
+                    System.out.println("Hesaptan Çıkılıyor...");
                     secim = 0;
+                    loop = false;
                     break;
 
             }
